@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/57d5e4dc4a.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css"/>
+		<title>Document</title>
+	</head>
+	<body class="bg-black text-white">
+		<main class="container mx-auto flex items-center justify-between h-screen">
+      <nav class="hidden fixed md:block left-350px left-section w-72 p-4 border-r border-r-zinc-900 space-y-10 h-full">
+        <div>
+          <img src="imgs/logo-wordmark.svg" class="h-14 mb-5 px-3" alt="Logo Wordmark">
+          <ul class="flex flex-col">
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-house text-2xl mr-5"></i>Home</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-magnifying-glass text-2xl mr-5"></i>Search</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-regular fa-compass text-2xl mr-5"></i>Explore</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-clapperboard text-2xl mr-5"></i>Reels</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-brands fa-facebook-messenger text-2xl mr-5"></i>Messages</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-regular fa-heart text-2xl mr-5"></i>Notifications</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-regular fa-square-plus text-2xl mr-5"></i>Create</a></li>
+            <li><a href="#" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><img src="imgs/porfile.jpg" width="24px" class="rounded-full mr-4" alt="Profile Img"> Profile</a></li>
+          </ul>
+        </div>
+        <ul class="flex flex-col relative">
+          <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-lg hover:bg-zinc-900 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-bars text-2xl mr-5"></i>More</a></li>
+          <div id="menu" class="hidden absolute left-4 w-72 bg-zinc-900 p-4" style="top: -475px;">
+            <ul class="flex flex-col">
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-gear text-xl mr-5"></i>Settings</a></li>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-chart-line text-xl mr-5"></i>Your Activities</a></li>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-regular fa-bookmark text-xl mr-5"></i>Saved</a></li>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-regular fa-moon text-xl mr-5"></i>Switch Appearance</a></li>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-solid fa-circle-question text-xl mr-5"></i>Report a Problem</a></li>
+              <div class="h-2 w-full bg-neutral-700 my-4 rounded-lg"></div>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full"><i class="fa-brands fa-threads text-xl mr-5"></i>Threads</a></li>
+              <div class="h-2 w-full bg-neutral-700 my-4 rounded-lg"></div>
+              <li><a href="#" id="menu-btn" class="text-white flex items-center font-bold text-sm hover:bg-neutral-700 px-4 py-3 rounded-xl w-full">Log Out</a></li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+      <nav class="nav-bottom bg-black fixed bottom-0 w-full border-t z-50 border-t-zinc-800 p-5 md:hidden">
+        <div class="container mx-auto flex items-center justify-around text-white ">
+          <a href="#"><i class="fa-solid fa-house text-2xl"></i></a>
+          <a href="#"><i class="fa-regular fa-compass text-2xl"></i></a>
+          <a href="#"><i class="fa-solid fa-clapperboard text-2xl"></i></a>
+          <a href="#"><i class="fa-regular fa-square-plus text-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-messenger text-2xl"></i></a>
+          <a href="#"><img src="imgs/porfile.jpg" width="36px" class="rounded-full" alt="Profile Img"></a>
+        </div>
+      </nav>
+      <div class="ml-0 md:ml-64">
+        <section class="middle-section sm:m-0 w-screen md:w-fit flex flex-col items-center h-screen md:px-16 md:py-4">
+          <div>
+            <nav class="nav-top md:hidden top-0 flex items-center justify-between w-full p-3">
+              <img src="imgs/logo-wordmark.svg" class="h-10" alt="Logo Wordmark">
+              <div class="w-54 relative">
+                <i class="fa-solid fa-magnifying-glass text-2xl absolute -translate-y-1/2 top-1/2 left-3 text-white"></i>
+                <input type="text" placeholder="Search" class="w-full px-14 pr-0 py-3 bg-zinc-800 placeholder-white text-white rounded-xl">
+              </div>
+              <a href="#" class="text-white no-underline"><i class="fa-regular fa-heart text-2xl"></i></a>
+            </nav>
+            <div class="stories w-screen md:w-full overflow-auto md:overflow-visible bg-black z-50">
+              <ul class="list-none flex space-x-4 m-4" style="width: 625px;">
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story1.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 1 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="absolute -top-10px z-10 rounded-full w-16 h-16"></canvas>
+                    <span>fcbarclona</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story2.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 2 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>realmadrid</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story3.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 3 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>alahly</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story4.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 4 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>zscofficial</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story5.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 5 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>mosalah</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story6.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 6 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>bassem</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story7.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 7 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>aljazeera</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white flex flex-col items-center text-xs space-y-2 relative">
+                    <img src="imgs/story8.jpg" class="w-16 rounded-full border border-black z-40" alt="Stroy 8 Img">
+                    <canvas style="top: -10px; height: 68px; width: 68px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);" class="z-10 rounded-full w-16 h-16 absolute"></canvas>
+                    <span>orange-eg</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="posts flex flex-col space-y-3 mt-4">
+            <div class="post w-full sm:m-0 md:w-fit p-6 md:p-0" style="width: min(470px, 100vw);">
+              <div class="page-details flex items-center justify-between">
+                <div class="flex">
+                  <div class="relative flex items-center justify-center">
+                    <img src="imgs/story1.jpg" class="w-10 rounded-full border border-black" alt="Stroy 1 Img">
+                    <canvas style="left: -2px; height: 44px; width: 44px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); z-index: -1;" class="rounded-full absolute"></canvas>
+                  </div>
+                  <div class="flex items-center ml-4">
+                    <h5>fcbarclona</h5>
+                    <i class="fa-solid fa-circle-check text-blue-500 fa-xs ml-2"></i>
+                    <p class="text-zinc-600 ml-2">• <span>20h</span></p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis cursor-pointer text-white"></i>
+              </div>
+              <div class="mx-auto my-3 w-full">
+              </div>
+              <img src="imgs/post1.jpg" class="object-cover" width="100%" alt="Post 1" class="h-full">
+              <div class="links flex items-center justify-between py-4">
+                <div class="flex space-x-6">
+                  <a href="#"><i class="fa-regular fa-heart text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-comment text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-paper-plane text-2xl"></i></a>
+                </div>
+                <i class="fa-regular fa-bookmark text-2xl"></i>
+              </div>
+              <div class="details space-y-2 w-full pb-2">
+                <p class="font-semibold">2,086,214 likes</p>
+                <p><span class="font-bold">fcbarclona<i class="fa-solid fa-circle-check text-blue-500 fa-xs mx-2"></i></span>Dani Olmo, culer until 2030. 💙❤️<br>Dani Olmo, culer fins al 2030. 🤩<br>Dani Olmo, culer hasta el 2030. 🫶</p>
+                <a class="text-zinc-600 cursor-pointer">View All Comments</a>
+                <form action="#">
+                  <input type="text" placeholder="Add a Comment" class="w-full pb-2 bg-black border-b border-zinc-400 text-zinc-400 placeholder:text-zinc-400 outline-none">
+                </form>
+              </div>
+            </div>
+            <div class="post w-full sm:m-0 md:w-fit p-6 md:p-0" style="width: min(470px, 100vw);">
+              <div class="page-details flex items-center justify-between">
+                <div class="flex">
+                  <div class="relative flex items-center justify-center">
+                    <img src="imgs/story3.jpg" class="w-10 rounded-full border border-black" alt="Stroy 1 Img">
+                    <canvas style="left: -2px; height: 44px; width: 44px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); z-index: -1;" class="rounded-full absolute"></canvas>
+                  </div>
+                  <div class="flex items-center ml-4">
+                    <h5>alahly</h5>
+                    <i class="fa-solid fa-circle-check text-blue-500 fa-xs ml-2"></i>
+                    <p class="text-zinc-600 ml-2">• <span>4h</span></p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis cursor-pointer text-white"></i>
+              </div>
+              <div class="mx-auto my-3 w-full">
+              </div>
+              <img src="imgs/post2.jpg" class="object-cover" width="100%" alt="Post 1" class="h-full">
+              <div class="links flex items-center justify-between py-4">
+                <div class="flex space-x-6">
+                  <a href="#"><i class="fa-regular fa-heart text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-comment text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-paper-plane text-2xl"></i></a>
+                </div>
+                <i class="fa-regular fa-bookmark text-2xl"></i>
+              </div>
+              <div class="details space-y-2 w-full pb-4">
+                <p class="font-semibold">1,286,214 likes</p>
+                <p><span class="font-bold">alahly<i class="fa-solid fa-circle-check text-blue-500 fa-xs mx-2"></i></span>مرحبًا بك في مسرح الأحلام 😍</p>
+                <a class="text-zinc-600 cursor-pointer">View All Comments</a>
+                <form action="#">
+                  <input type="text" placeholder="Add a Comment" class="w-full pb-2 bg-black border-b border-zinc-400 text-zinc-400 placeholder:text-zinc-400 outline-none">
+                </form>
+              </div>
+            </div>
+            <div class="post w-full sm:m-0 md:w-fit p-6 md:p-0" style="width: min(470px, 100vw);">
+              <div class="page-details flex items-center justify-between">
+                <div class="flex">
+                  <div class="relative flex items-center justify-center">
+                    <img src="imgs/story2.jpg" class="w-10 rounded-full border border-black" alt="Stroy 1 Img">
+                    <canvas style="left: -2px; height: 44px; width: 44px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); z-index: -1;" class="rounded-full absolute"></canvas>
+                  </div>
+                  <div class="flex items-center ml-4">
+                    <h5>realmadrid</h5>
+                    <i class="fa-solid fa-circle-check text-blue-500 fa-xs ml-2"></i>
+                    <p class="text-zinc-600 ml-2">• <span>1w</span></p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis cursor-pointer text-white"></i>
+              </div>
+              <div class="mx-auto my-3 w-full">
+              </div>
+              <img src="imgs/post3.jpg" class="object-cover" width="100%" alt="Post 1" class="h-full">
+              <div class="links flex items-center justify-between py-4">
+                <div class="flex space-x-6">
+                  <a href="#"><i class="fa-regular fa-heart text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-comment text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-paper-plane text-2xl"></i></a>
+                </div>
+                <i class="fa-regular fa-bookmark text-2xl"></i>
+              </div>
+              <div class="details space-y-2 w-full pb-4">
+                <p class="font-semibold">1,286,214 likes</p>
+                <p><span class="font-bold">realmadrid<i class="fa-solid fa-circle-check text-blue-500 fa-xs mx-2"></i></span>💪 @K.Mbappe 💪 #WelcomeMbappé</p>
+                <a class="text-zinc-600 cursor-pointer">View All Comments</a>
+                <form action="#">
+                  <input type="text" placeholder="Add a Comment" class="w-full pb-2 bg-black border-b border-zinc-400 text-zinc-400 placeholder:text-zinc-400 outline-none">
+                </form>
+              </div>
+            </div>
+            <div class="post w-full sm:m-0 md:w-fit p-6 md:p-0" style="width: min(470px, 100vw);">
+              <div class="page-details flex items-center justify-between">
+                <div class="flex">
+                  <div class="relative flex items-center justify-center">
+                    <img src="imgs/story3.jpg" class="w-10 rounded-full border border-black" alt="Stroy 1 Img">
+                    <canvas style="left: -2px; height: 44px; width: 44px; background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); z-index: -1;" class="rounded-full absolute"></canvas>
+                  </div>
+                  <div class="flex items-center ml-4">
+                    <h5>alahly</h5>
+                    <i class="fa-solid fa-circle-check text-blue-500 fa-xs ml-2"></i>
+                    <p class="text-zinc-600 ml-2">• <span>1d</span></p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-ellipsis cursor-pointer text-white"></i>
+              </div>
+              <div class="mx-auto my-3 w-full">
+              </div>
+              <img src="imgs/post4.jpg" class="object-cover" width="100%" alt="Post 1" class="h-full">
+              <div class="links flex items-center justify-between py-4">
+                <div class="flex space-x-6">
+                  <a href="#"><i class="fa-regular fa-heart text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-comment text-2xl"></i></a>
+                  <a href="#"><i class="fa-regular fa-paper-plane text-2xl"></i></a>
+                </div>
+                <i class="fa-regular fa-bookmark text-2xl"></i>
+              </div>
+              <div class="details space-y-2 w-full pb-4">
+                <p class="font-semibold">1,286,214 likes</p>
+                <p><span class="font-bold">alahly<i class="fa-solid fa-circle-check text-blue-500 fa-xs mx-2"></i></span>🔴 وَالخَيلُ تَعلَمُ وَالفَوارِسُ أَنَّني.. شَيخُ الحُروبِ وَكَهلُها وَفَتاها 🦅🔝</p>
+                <a class="text-zinc-600 cursor-pointer">View All Comments</a>
+                <form action="#">
+                  <input type="text" placeholder="Add a Comment" class="w-full pb-2 bg-black border-b border-zinc-400 text-zinc-400 placeholder:text-zinc-400 outline-none">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hidden fixed md:block top-0 right-0 right-section w-96 p-8 border-l border-l-zinc-900 space-y-10 h-full">
+          <div class="account flex items-center justify-between">
+            <div class="flex items-center">
+              <img src="imgs/porfile.jpg" class="w-12 rounded-full mr-2" alt="">
+              <div>
+                <h4>@yousief.sameh</h4>
+                <p class="text-zinc-400">Yousief Sameh</p>
+              </div>
+            </div>
+            <a href="#" class="text-blue-600 font-bold hover:text-white">Switch</a>
+          </div>
+          <nav class="suggests space-y-4">
+            <div class="flex justify-between items-center">
+              <h4 class="text-zinc-400">Suggested For You</h4>
+              <a href="#" class="text-white font-bold hover:text-blue-600">See All</a>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="imgs/story3.jpg" class="w-12 rounded-full mr-2" alt="">
+                <div>
+                  <h4>@alahly</h4>
+                  <p class="text-zinc-400">Suggested For You</p>
+                </div>
+              </div>
+              <a href="#" class="text-blue-600 font-bold hover:text-white">Follow</a>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="imgs/story4.jpg" class="w-12 rounded-full mr-2" alt="">
+                <div>
+                  <h4>@zscofficial</h4>
+                  <p class="text-zinc-400">Suggested For You</p>
+                </div>
+              </div>
+              <a href="#" class="text-blue-600 font-bold hover:text-white">Follow</a>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="imgs/story1.jpg" class="w-12 rounded-full mr-2" alt="">
+                <div>
+                  <h4>@fcbarclona</h4>
+                  <p class="text-zinc-400">Suggested For You</p>
+                </div>
+              </div>
+              <a href="#" class="text-blue-600 font-bold hover:text-white">Follow</a>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="imgs/story2.jpg" class="w-12 rounded-full mr-2" alt="">
+                <div>
+                  <h4>@realmadrid</h4>
+                  <p class="text-zinc-400">Suggested For You</p>
+                </div>
+              </div>
+              <a href="#" class="text-blue-600 font-bold hover:text-white">Follow</a>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="imgs/story5.jpg" class="w-12 rounded-full mr-2" alt="">
+                <div>
+                  <h4>@mosalah</h4>
+                  <p class="text-zinc-400">Suggested For You</p>
+                </div>
+              </div>
+              <a href="#" class="text-blue-600 font-bold hover:text-white">Follow</a>
+            </div>
+          </nav>
+          <p class="text-sm text-zinc-400">
+            <a href="#">About</a> . 
+            <a href="#">Help</a> .
+            <a href="#">Press</a> . 
+            <a href="#">API</a> . 
+            <a href="#">Jobs</a> . 
+            <a href="#">Privacy</a> . 
+            <a href="#">Terms</a> . 
+            <a href="#">Locations</a> . 
+            <a href="#">Language</a> . 
+            <a href="#">Meta Verfied</a>
+          </p>
+          <p class="text-sm text-zinc-400">&copy; 2024 Instagram from Meta</p>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+	</body>
+</html>
